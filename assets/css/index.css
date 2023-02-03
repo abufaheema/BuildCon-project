@@ -2,8 +2,6 @@
   font-family: monospace;
 }
 
-
-
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -87,4 +85,34 @@
 
 .team .card {
   box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1215686275) !important;
+  padding: 5px 20px;
+  transition: 0.5s;
+  -webkit-animation: scroll 0.6s 1;
+          animation: scroll 0.6s 1;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }/*# sourceMappingURL=index.css.map */
